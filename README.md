@@ -1,6 +1,6 @@
 # To Do app
 
-`To Do` is an example of MERN Stack backend developed by Tergeltengis.
+`To Do` is an example of MERN Stack backend(folder structure) developed by Tergeltengis.
 
 
 ## Toolchain
@@ -19,4 +19,4 @@
 
 3. Run `yarn start` to run.
 
-4. Open postman
+4. Ready to check endpoint using Postman.
