@@ -4,7 +4,7 @@
   "description": "only backend",
   "main": "server.ts",
   "scripts": {
-    "test": "npx jest --runInBand",
+    "test": "npx jest --runInBand --verbose",
     "test:cov": "npx jest --coverage --runInBand",
     "start": "nodemon server.ts"
   },

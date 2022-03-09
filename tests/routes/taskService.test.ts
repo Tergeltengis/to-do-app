@@ -31,6 +31,13 @@ describe("Testing task CRUD", () => {
     expect(data.task).toStrictEqual(["Task1", "Task2"]);
   });
 
+  it("After saving an object, list size should be 1", async () => {
+    const res = await request(app).get("/tasks");
+    expect(res.statusCode).toBe(200);
+    const data = JSON.parse(res.text);
+    expect(data.length).toBe(1);
+  });
+
   it("Inserting duplicate title it should response 500", async () => {
     const res = await request(app)
       .post("/tasks")
