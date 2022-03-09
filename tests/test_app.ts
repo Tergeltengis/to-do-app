@@ -10,6 +10,7 @@ beforeAll(async () => {
 afterAll(async () => {
   await tearDown();
 });
+
 describe("Test the root path content", () => {
   it("It should response the GET text", async () => {
     const res = await request(app).get("/");

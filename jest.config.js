@@ -4,9 +4,7 @@ module.exports = {
   testEnvironment: "node",
   roots: ["tests"],
   moduleFileExtensions: ["js", "ts"],
-  testMatch: ["<rootDir>/tests/*.ts"],
-  testMatch: ["<rootDir>/tests/routes/*.ts"],
-
+  testMatch: ["<rootDir>/tests/*.ts", "<rootDir>/tests/routes/*.ts"],
   coverageThreshold: {
     global: {
       branches: 100,

@@ -4,7 +4,8 @@
   "description": "only backend",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx jest --runInBand",
+    "test:cov": "npx jest --coverage --runInBand",
     "start": "nodemon server.ts"
   },
   "repository": {
