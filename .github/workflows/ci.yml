@@ -17,12 +17,8 @@ jobs:
         with:
           mongodb-version: "4.4"
       - name: Install modules
-        run: npm install
+        run: yarn
       - name: Run unit tests
-        run: npm run unit
-      - name: Run integration tests
-        run: npm run int
+        run: yarn test
       - name: Run coverage test
-        run: npm run cov
-      - name: Run eslint
-        run: npm run eslint
+        run: yarn test:cov
