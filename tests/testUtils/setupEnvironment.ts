@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import Task from "../../models/tasks";
 
 const setupEnvironment = async () => {
+  /* istanbul ignore next */
   if (!process.env.MONGODB_HOST) {
     process.env.MONGODB_HOST = "mongodb://localhost:27017/todo_test";
   }
