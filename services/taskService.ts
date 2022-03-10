@@ -1,15 +1,16 @@
-import taskModel from '../models/tasks';
-import {Request} from 'express'
+import Task from "../models/tasks";
+import { Request } from "express";
+
 const getTasks = () => {
-    return taskModel.find({})
-}
+  return Task.find({});
+};
 
 const addTask = (request: Request) => {
-    return new taskModel(request.body).save()
-}
+  return new Task(request.body).save();
+};
 
 const deleteTask = (request: Request) => {
-    return taskModel.findByIdAndDelete(request.body._id)
-}
+  return Task.findByIdAndDelete(request.body._id);
+};
 
-export default {getTasks, addTask, deleteTask}
+export default { getTasks, addTask, deleteTask };
