@@ -1,9 +1,13 @@
 import express from "express";
-import taskController from "../controller/taskControllers";
+import {
+  getTasks,
+  createTask,
+  deleteTask,
+} from "../controller/taskControllers";
 const taskRouter = express.Router();
 
-taskRouter.get("/tasks", taskController.getTasks);
-taskRouter.post("/tasks", taskController.createTask);
-taskRouter.delete("/tasks", taskController.deleteTask);
+taskRouter.get("/tasks", getTasks);
+taskRouter.post("/tasks", createTask);
+taskRouter.delete("/tasks", deleteTask);
 
 export default taskRouter;

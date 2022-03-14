@@ -37,4 +37,4 @@ http://localhost:5000/tasks (GET,POST,DELETE)
 In local environment, we need to start MongoDB server on `localhost:27017`.
 
 Run `yarn test` for testing.
-`yarn test:cov` for coverage.
+`yarn coverage` for coverage.

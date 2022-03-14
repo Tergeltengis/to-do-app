@@ -1,16 +1,18 @@
 import Task from "../models/tasks";
 import { Request } from "express";
 
-const getTasks = () => {
+// export const getTaskByTitleService = (request: Request) => {
+//   return Task.findById(request.body.title);
+// };
+
+export const getTasksService = () => {
   return Task.find({});
 };
 
-const addTask = (request: Request) => {
+export const addTaskService = (request: Request) => {
   return new Task(request.body).save();
 };
 
-const deleteTask = (request: Request) => {
+export const deleteTaskService = (request: Request) => {
   return Task.findByIdAndDelete(request.body._id);
 };
-
-export default { getTasks, addTask, deleteTask };

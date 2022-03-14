@@ -21,4 +21,4 @@ jobs:
       - name: Run unit tests
         run: yarn test
       - name: Run coverage test
-        run: yarn test:cov
+        run: yarn coverage
